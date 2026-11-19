@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIVE · Aprendizaje activo y conexión humana para adultos mayores</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{lino:'#FAF6F0',arena:'#F2EAE1',pizarra:'#23394D',espresso:'#2C221E',miel:'#D9822B',terracota:'#C86D51',salvia:'#4A6B5D'},fontFamily:{serif:['Lora','Georgia','serif'],sans:['"Plus Jakarta Sans"','Inter','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:#FAF6F0;color:#23394D;font-size:18px;line-height:1.75}
+.warm{box-shadow:0 18px 50px -18px rgba(120,80,40,.28)}
+.panel{display:none}.panel.on{display:block;animation:soft .6s ease}
+@keyframes soft{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.vbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s ease,opacity .6s ease;opacity:0}
+.vbody.on{grid-template-rows:1fr;opacity:1}.vbody>div{overflow:hidden}
+.tl-fill{transition:width .7s ease}
+.focusable:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #D9822B;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+.polaroid{background:#fff;padding:14px 14px 18px;border-radius:6px}
+</style>
+</head>
+<body class="font-sans">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 bg-lino/75 backdrop-blur-md border-b border-espresso/10">
+<nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+<a href="#inicio" class="font-serif text-xl font-semibold text-pizarra flex items-center gap-2">
+<svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="#D9822B" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="16" r="5"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/></svg>VIVE</a>
+<div class="hidden md:flex gap-7 text-[15px] font-medium">
+<a class="hover:text-miel transition duration-500" href="#problema">Problema</a>
+<a class="hover:text-miel transition duration-500" href="#modelo">Modelo</a>
+<a class="hover:text-miel transition duration-500" href="#fundamento">Fundamento</a>
+<a class="hover:text-miel transition duration-500" href="#vive">Metodología</a>
+<a class="hover:text-miel transition duration-500" href="#sesion">Sesión</a>
+<a class="hover:text-miel transition duration-500" href="#impacto">Impacto</a></div>
+<a href="#modelo" class="md:hidden text-sm font-semibold text-miel">Ver modelo</a>
+</nav></header>
+
+<!-- HERO -->
+<section id="inicio" class="pt-32 pb-24 relative overflow-hidden" style="background:radial-gradient(ellipse at 85% 10%,#f6dcb5 0%,#FAF6F0 55%)">
+<div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<p class="inline-block text-sm font-semibold text-salvia bg-salvia/10 rounded-full px-4 py-1.5 mb-7">Emprendimiento Social • Premio Frisa • Tecnológico de Monterrey</p>
+<h1 class="font-serif text-4xl md:text-6xl leading-[1.12] text-espresso font-medium">VIVE Café &amp; Club: <em class="text-terracota">donde cada historia inspira y cada día se aprende algo nuevo.</em></h1>
+<p class="mt-7 text-xl max-w-2xl text-pizarra/90">Clubes de inglés conversacional y un modelo de bienestar emocional y estimulación cognitiva, en comunidad y en casa — <strong>no es una estancia ni un asilo</strong>, es un espacio vivo de dignidad, escucha y propósito.</p>
+<div class="mt-10 flex flex-wrap gap-4">
+<a href="#modelo" class="bg-miel text-white font-semibold rounded-2xl px-8 py-4 warm hover:bg-terracota transition duration-500">Conocer el Modelo</a>
+<a href="#vive" class="border-2 border-pizarra text-pizarra font-semibold rounded-2xl px-8 py-4 hover:bg-pizarra hover:text-lino transition duration-500">Explorar Metodología VIVE</a></div>
+<p class="mt-10 text-pizarra/70 italic font-serif max-w-xl">Afuera todo corre. Aquí el tiempo se detiene para escuchar, compartir y aprender sin presión.</p>
+</div>
+<div class="lg:col-span-5 relative h-[420px] hidden md:block" aria-hidden="true">
+<div class="polaroid warm absolute top-0 left-4 w-56 -rotate-6">
+<div class="h-40 rounded bg-arena grid place-items-center"><svg width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="#C86D51" stroke-width="3" stroke-linecap="round"><path d="M20 80c10-26 28-30 40-22 8 6 14 2 20-6"/><path d="M100 78c-10-26-28-30-40-22-8 6-14 2-20-6"/><circle cx="60" cy="30" r="9" stroke="#D9822B"/><path d="M60 12v-6M44 20l-4-4M76 20l4-4M38 34h-6M82 34h6" stroke="#D9822B"/></svg></div>
+<p class="font-serif text-sm mt-3 text-espresso">Manos que enseñan, manos que aprenden</p></div>
+<div class="polaroid warm absolute top-24 right-0 w-56 rotate-3">
+<div class="h-40 rounded bg-[#e6ddd0] grid place-items-center"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="#4A6B5D" stroke-width="3" stroke-linecap="round"><path d="M50 88V46"/><path d="M50 60C30 60 22 46 24 30c18 0 26 12 26 30zM50 48c18 0 28-12 26-28-18 0-26 10-26 28z"/></svg></div>
+<p class="font-serif text-sm mt-3 text-espresso">Saberes que siguen floreciendo</p></div>
+<div class="polaroid warm absolute bottom-0 left-16 w-52 rotate-1 bg-white">
+<div class="rounded bg-pizarra text-lino p-4 font-serif text-[15px] leading-snug">“Quiero talleres 100% prácticos.”<span class="block mt-2 text-xs font-sans text-miel">Reinaldo de la Garza, Distrito Tec</span></div></div>
+</div></div></section>
+
+<!-- PROBLEMA -->
+<section id="problema" class="py-24">
+<div class="max-w-6xl mx-auto px-5">
+<div class="bg-pizarra text-lino rounded-2xl p-10 warm md:flex items-center gap-10">
+<p class="font-serif text-6xl text-miel shrink-0">1 de cada 6</p>
+<p class="text-xl mt-3 md:mt-0">personas mayores sufren algún tipo de abuso.<span class="block text-sm text-lino/70 mt-1">— ONU</span></p></div>
+<p class="mt-16 text-sm font-semibold text-salvia">El problema</p>
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">El mundo corre. Muchas personas mayores se quedan solas.</h2>
+<div class="mt-10 grid md:grid-cols-3 gap-6">
+<div class="bg-arena rounded-2xl p-7 warm border-l-4 border-salvia"><h3 class="font-serif text-xl text-espresso">Sin dónde aprender hoy</h3><p class="mt-3 text-[17px]">La oferta suele ser clínica o infantilizada, y no parte de lo que ya saben.</p></div>
+<div class="bg-arena rounded-2xl p-7 warm border-l-4 border-salvia"><h3 class="font-serif text-xl text-espresso">Sin quién escuche</h3><p class="mt-3 text-[17px]">Oficios, historias y saberes que nadie pregunta.</p></div>
+<div class="bg-arena rounded-2xl p-7 warm border-l-4 border-salvia"><h3 class="font-serif text-xl text-espresso">Familias sin opciones dignas</h3><p class="mt-3 text-[17px]">Entre quedarse en casa solos o una estancia, falta algo en medio.</p></div></div>
+<p class="mt-16 text-sm font-semibold text-miel">Voces de Distrito Tec</p>
+<div class="mt-4 grid md:grid-cols-3 gap-6">
+<figure class="bg-white rounded-2xl p-7 warm"><blockquote class="font-serif text-xl text-espresso">“Quiero talleres 100% prácticos.”</blockquote><figcaption class="mt-3 text-sm font-semibold text-salvia">Reinaldo de la Garza</figcaption></figure>
+<figure class="bg-white rounded-2xl p-7 warm"><blockquote class="font-serif text-xl text-espresso">Sra. Pavis, 83 años, Estancia Minerva.</blockquote><figcaption class="mt-3 text-[16px]">Fatiga visual/motora; prefiere plática y compañía 1 a 1.</figcaption></figure>
+<figure class="bg-white rounded-2xl p-7 warm"><blockquote class="font-serif text-xl text-espresso">“Necesitan una figura externa neutral; en casa hay regaños.”</blockquote><figcaption class="mt-3 text-sm font-semibold text-salvia">Carmen Vázquez</figcaption></figure></div>
+<p class="mt-10 font-serif text-xl italic max-w-3xl">Y las familias cargan una doble preocupación: por su propia familia y por sus padres.</p>
+</div></section>
+
+<!-- MODELO -->
+<section id="modelo" class="py-24 bg-arena">
+<div class="max-w-6xl mx-auto px-5">
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">El Modelo de Dos Líneas: “Un Ciclo de Vida”</h2>
+<p class="mt-4 max-w-2xl text-lg">Acompañamos a cada persona en la etapa que vive, desde el club del barrio hasta la sala de su propia casa.</p>
+<div role="tablist" class="mt-10 inline-flex bg-lino rounded-2xl p-1.5 warm gap-1">
+<button role="tab" data-tab="l1" class="tab on rounded-xl px-5 py-3 font-semibold transition duration-500">Fase 1 · 65–75 años</button>
+<button role="tab" data-tab="l2" class="tab rounded-xl px-5 py-3 font-semibold transition duration-500">Fase 2 · 75+ años</button></div>
+<div class="mt-8 grid md:grid-cols-5 gap-8 items-stretch">
+<div class="md:col-span-3">
+<div id="l1" class="panel on bg-lino rounded-2xl p-8 md:p-10 warm h-full">
+<span class="text-sm font-semibold text-salvia">Clubes en la comunidad</span>
+<h3 class="font-serif text-2xl md:text-3xl mt-2 text-espresso">Fase 1: VIVE Café &amp; Club</h3>
+<p class="mt-1 text-miel font-semibold">65 a 75 años</p>
+<p class="mt-4">Un espacio propio en planta baja (accesible, sillas ergonómicas y luz cálida) abierto al público. Vehículo de socialización y gimnasia cerebral: clubes de inglés conversacional para adultos mayores activos que quieren viajar, hacer amigos y fortalecer su reserva cognitiva.</p>
+<svg class="mt-6" width="260" height="70" viewBox="0 0 260 70" fill="none" stroke="#4A6B5D" stroke-width="2.5" stroke-linecap="round"><circle cx="30" cy="35" r="12"/><circle cx="85" cy="35" r="12"/><circle cx="140" cy="35" r="12"/><circle cx="195" cy="35" r="12" stroke="#D9822B"/><path d="M42 35h31M97 35h31M152 35h31M207 35h30" stroke-dasharray="3 6"/></svg></div>
+<div id="l2" class="panel bg-lino rounded-2xl p-8 md:p-10 warm h-full">
+<span class="text-sm font-semibold text-terracota">Compañía en casa</span>
+<h3 class="font-serif text-2xl md:text-3xl mt-2 text-espresso">Fase 2: Acompañamiento sensorial en domicilio</h3>
+<p class="mt-1 text-miel font-semibold">75+ años</p>
+<p class="mt-4">Sesiones personalizadas 1 a 1 en casa enfocadas en estimulación cognitiva suave, reminiscencia y compañía empática.</p>
+<svg class="mt-6" width="120" height="80" viewBox="0 0 120 80" fill="none" stroke="#C86D51" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 60 8l50 32"/><path d="M22 34v38h76V34"/><circle cx="60" cy="46" r="7" stroke="#D9822B"/><path d="M60 24v-5M44 30l-3-3M76 30l3-3" stroke="#D9822B"/></svg></div>
+</div>
+<aside class="md:col-span-2 bg-pizarra text-lino rounded-2xl p-8 warm">
+<h3 class="font-serif text-xl text-miel">Sostenibilidad y Operación</h3>
+<p class="mt-4 text-[17px]">Membresías mensuales, pagadas principalmente por hijos/familiares o adultos mayores independientes.</p>
+<p class="mt-3 text-[17px]">Operadas mediante alianzas universitarias con estudiantes de Servicio Social y prácticas profesionales del Tecnológico de Monterrey, respaldados por asesoría gerontológica.</p>
+<div class="mt-5 flex gap-3 text-sm font-semibold"><span class="bg-lino/15 rounded-full px-3 py-1">Familia</span><span class="bg-lino/15 rounded-full px-3 py-1">Universidad</span><span class="bg-lino/15 rounded-full px-3 py-1">Gerontología</span></div></aside>
+</div></div></section>
+
+<!-- FUNDAMENTO -->
+<section id="fundamento" class="py-24">
+<div class="max-w-6xl mx-auto px-5">
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">Fundamento Pedagógico y Científico</h2>
+<p class="mt-4 max-w-2xl text-lg">Tres pilares que unen rigor y calidez.</p>
+<div class="mt-12 grid md:grid-cols-3 gap-7">
+<article class="bg-arena rounded-2xl p-8 warm border-t-4 border-miel">
+<h3 class="font-serif text-xl text-espresso">INAPAM</h3><p class="text-sm font-semibold text-salvia">Manual de Estimulación Cognitiva</p>
+<p class="mt-4">Compensa la disminución en velocidad de procesamiento, memoria de trabajo y atención dividida mediante actividades concretas, entornos sin distractores y apoyos externos.</p></article>
+<article class="bg-arena rounded-2xl p-8 warm border-t-4 border-terracota">
+<h3 class="font-serif text-xl text-espresso">Fundación Saldarriaga Concha / OMS</h3><p class="text-sm font-semibold text-salvia">Perspectiva del tiempo y DUA</p>
+<p class="mt-4">Aplica la perspectiva del tiempo (el aprendizaje debe servir para el presente inmediato, no para el futuro), el Diseño Universal del Aprendizaje (DUA) con múltiples canales (visual, auditivo, táctil), el aprendizaje empírico basado en su historia de vida y el aprendizaje entre pares.</p></article>
+<article class="bg-arena rounded-2xl p-8 warm border-t-4 border-salvia">
+<h3 class="font-serif text-xl text-espresso">UNILA</h3><p class="text-sm font-semibold text-salvia">Andragogía</p>
+<p class="mt-4">Emplea el aprendizaje cruzado (relación con situaciones reales), aprendizaje emocional (uso de experiencias propias) y aprendizaje por argumentación (participación y debate sin prisas).</p></article>
+</div></div></section>
+
+<!-- VIVE -->
+<section id="vive" class="py-24 bg-arena">
+<div class="max-w-4xl mx-auto px-5">
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">Metodología propia: Modelo “VIVE”</h2>
+<p class="mt-4 text-lg">Toca cada letra para ver cómo se vive en la sesión.</p>
+<div class="mt-10 space-y-4" id="vive-list"></div>
+</div></section>
+
+<!-- SESION -->
+<section id="sesion" class="py-24">
+<div class="max-w-5xl mx-auto px-5">
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">Anatomía de una Sesión (60 a 75 minutos)</h2>
+<p class="mt-4 text-lg max-w-2xl">Cuatro momentos con ritmo propio. Selecciona un bloque para ver qué sucede.</p>
+<div class="mt-10">
+<div class="flex h-4 rounded-full overflow-hidden bg-arena" id="bar" aria-hidden="true"></div>
+<div class="flex justify-between text-sm mt-2 text-pizarra/70"><span>0 min</span><span>Pausas activas entre bloques</span><span>60–75 min</span></div></div>
+<div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3" id="steps"></div>
+<div id="stepdetail" class="mt-6 bg-white rounded-2xl p-8 warm min-h-[170px]"></div>
+</div></section>
+
+<!-- IMPACTO -->
+<section id="impacto" class="py-24 bg-arena">
+<div class="max-w-6xl mx-auto px-5">
+<h2 class="font-serif text-3xl md:text-5xl text-espresso font-medium">Protocolo de Implementación y Medición de Impacto</h2>
+<p class="mt-4 text-lg max-w-2xl">Seguridad para familias y jurado: cada paso es replicable y medible.</p>
+<div class="mt-12 grid md:grid-cols-3 gap-6">
+<div class="bg-lino rounded-2xl p-7 warm"><h3 class="font-serif text-lg text-espresso">Paso 1 · Diagnóstico ligero (Onboarding)</h3><p class="mt-3 text-[17px]">Charla informal de 5 minutos al ingresar para identificar intereses, oficios previos y necesidades visuales, auditivas o motrices.</p></div>
+<div class="bg-lino rounded-2xl p-7 warm"><h3 class="font-serif text-lg text-espresso">Paso 2 · Kits de Taller estandarizados</h3><p class="mt-3 text-[17px]">Fichas de una página por sesión (objetivo cognitivo INAPAM, material sensorial, pregunta detonadora y reglas del juego) para que cualquier facilitador bilingüe, incluidos los estudiantes del Tec, la imparta fácilmente.</p></div>
+<div class="bg-lino rounded-2xl p-7 warm"><h3 class="font-serif text-lg text-espresso">Paso 3 · Reglas de entorno</h3><p class="mt-3 text-[17px]">Bloques de 15–20 minutos con pausas activas, espacios iluminados y sin ruido de fondo (televisión apagada en sesiones a domicilio).</p></div>
+</div>
+
+<div class="mt-8 bg-salvia text-lino rounded-2xl p-7 warm"><h3 class="font-serif text-xl text-white">Validado en campo</h3><p class="mt-2 text-[17px]">Metodología de inglés previamente adaptada y probada en el proyecto social Líderes del Mañana.</p></div>
+<h3 class="font-serif text-2xl mt-16 text-espresso">Paso 4 · Indicadores clave (KPIs para el jurado y familias)</h3>
+<div class="mt-8 grid lg:grid-cols-2 gap-8">
+<!-- Ficha -->
+<div>
+<p class="font-semibold text-salvia mb-3">Vista previa de una Ficha de Kit de Taller</p>
+<div class="bg-white rounded-2xl p-8 warm border border-espresso/10 relative">
+<div class="absolute -top-3 right-6 bg-miel text-white text-xs font-bold rounded-full px-3 py-1">1 página</div>
+<h4 class="font-serif text-xl text-espresso">Sesión: “Pedir un café en inglés”</h4>
+<dl class="mt-5 space-y-4 text-[16px]">
+<div><dt class="font-semibold text-terracota">Objetivo cognitivo (INAPAM)</dt><dd>Ejercitar la memoria de trabajo con una tarea concreta, sin distractores.</dd></div>
+<div><dt class="font-semibold text-terracota">Material sensorial</dt><dd>Menús reales de café, tarjetas con 5 a 8 frases en letra grande y canciones en inglés.</dd></div>
+<div><dt class="font-semibold text-terracota">Pregunta detonadora</dt><dd>“¿Cuál fue el mejor café que han tomado en un viaje?”</dd></div>
+<div><dt class="font-semibold text-terracota">Reglas del juego</dt><dd>Todos hablan, nadie corrige, cada quien lleva su ritmo.</dd></div></dl></div></div>
+<!-- KPIs -->
+<div>
+<p class="font-semibold text-salvia mb-3">Panel de KPIs (ejemplo ilustrativo)</p>
+<div class="bg-pizarra text-lino rounded-2xl p-8 warm">
+<h4 class="font-serif text-lg text-miel">Adherencia y disfrute</h4>
+<p class="text-[16px] mt-1">Porcentaje de asistencia recurrente y escala visual de satisfacción al salir.</p>
+<div class="mt-4 flex justify-between text-sm"><span>Asistencia recurrente</span><span id="kv">—</span></div>
+<input id="kr" type="range" min="40" max="100" value="82" class="w-full accent-[#D9822B] focusable" aria-label="Asistencia recurrente">
+<div class="mt-4 flex gap-3 text-3xl" id="faces" role="group" aria-label="Escala visual de satisfacción"></div>
+<hr class="my-6 border-lino/20">
+<h4 class="font-serif text-lg text-miel">Transferencia a la vida diaria</h4>
+<p class="text-[16px] mt-1">Encuesta mensual breve a los familiares sobre mejoras en ánimo, conversación y autonomía del adulto mayor.</p>
+<div class="mt-4 space-y-3 text-sm" id="bars"></div></div></div>
+</div></div></section>
+
+<!-- FOOTER -->
+<footer class="bg-espresso text-lino py-16">
+<div class="max-w-5xl mx-auto px-5 text-center">
+<svg class="mx-auto mb-5" width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="#D9822B" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="16" r="5"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/></svg>
+<p class="font-serif text-2xl max-w-2xl mx-auto">¡Puede convertirse en realidad! Personas que sostienen, que cuidan. Ahí está la esencia de VIVE.</p>
+<p class="mt-8 text-lino/75 max-w-2xl mx-auto text-[16px]">Proyecto presentado con el respaldo del ecosistema de emprendimiento social del Tecnológico de Monterrey, en el marco de la convocatoria del Premio Frisa.</p></div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// Tabs
+const setTab=id=>{$$('.panel').forEach(p=>p.classList.toggle('on',p.id===id));$$('.tab').forEach(b=>{const o=b.dataset.tab===id;b.classList.toggle('on',o);b.style.background=o?'#23394D':'transparent';b.style.color=o?'#FAF6F0':'#23394D';b.setAttribute('aria-selected',o)})};
+$$('.tab').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));setTab('l1');
+// VIVE
+const vive=[
+['V','Vivencial','Utilidad inmediata','Inglés útil hoy: pedir un café, viajar, usar apps o hablar con nietos.','En sesión: practican cómo pedir un café y arman su primer mensaje en inglés para un nieto.','#D9822B'],
+['I','Intuitivo','Aprendizaje cruzado y empírico','Parte de palabras y canciones en inglés que ya conocen antes de ver reglas.','En sesión: cantan el coro de una canción conocida y descubren que ya dominan varias palabras.','#C86D51'],
+['V','Visual y Multisensorial','DUA','Menús reales, mapas, objetos y tarjetas en letra grande, sin diapositivas saturadas de texto.','En sesión: un menú real de café, un mapa para planear un viaje y tarjetas grandes con las frases del día.','#4A6B5D'],
+['E','Emocional y Entre Pares','Espacios seguros','Espacios seguros de debate, sin juicios ni presión de tiempo, donde los participantes se apoyan mutuamente.','En sesión: en parejas, uno explica y el otro pregunta; nadie corrige, todos tienen el tiempo que necesitan.','#23394D']];
+$('#vive-list').innerHTML=vive.map((v,i)=>`<div class="bg-lino rounded-2xl warm overflow-hidden">
+<button class="vb w-full flex items-center gap-5 p-5 text-left" data-i="${i}" aria-expanded="false">
+<span class="font-serif text-4xl w-16 h-16 rounded-2xl grid place-items-center text-white shrink-0" style="background:${v[5]}">${v[0]}</span>
+<span><span class="block font-serif text-xl text-espresso">${v[1]}</span><span class="text-sm text-pizarra/75">${v[2]}</span></span></button>
+<div class="vbody"><div><div class="px-6 pb-7 pt-1 md:pl-28"><p>${v[3]}</p><p class="mt-4 border-l-4 pl-4 text-[17px] italic font-serif" style="border-color:${v[5]}">${v[4]}</p></div></div></div></div>`).join('');
+$$('.vb').forEach(b=>b.onclick=()=>{const body=b.nextElementSibling,open=body.classList.toggle('on');b.setAttribute('aria-expanded',open)});
+// Sesión
+const st=[
+['Anclaje y Calidez',10,'#D9822B','Ronda de saberes previos con una pregunta detonadora ligada a su historia personal para activar la memoria a largo plazo y reducir ansiedad, mientras disfrutan un café.'],
+['Detonante Sensorial - DUA',15,'#C86D51','5 a 8 frases clave en inglés con tarjetas en letra grande, objetos reales, música o demostraciones en vivo.'],
+['Práctica Lúdica / Gamificación',25,'#4A6B5D','Retos en equipo o pareja (loterías temáticas, armado de secuencias, resolución de casos prácticos en celular o creación manual) para ejercitar funciones ejecutivas sin sentir que es una “clase escolar”.'],
+['Cierre y Transferencia',10,'#23394D','“Bitácora de logro” donde explican con sus palabras qué aprendieron y cómo lo aplicarán esa semana; entrega de una guía impresa de bolsillo de una hoja.']];
+const tot=60;
+$('#bar').innerHTML=st.map((s,i)=>`<div class="seg transition duration-500" data-i="${i}" style="width:${s[1]/tot*100}%;background:${s[2]};opacity:.35;border-right:3px solid #FAF6F0"></div>`).join('');
+$('#steps').innerHTML=st.map((s,i)=>`<button class="sb rounded-2xl p-4 text-left bg-arena transition duration-500 hover:bg-white" data-i="${i}"><span class="block text-sm font-semibold" style="color:${s[2]}">Paso ${i+1} · ${s[1]} min</span><span class="block font-serif text-[17px] text-espresso leading-snug mt-1">${s[0]}</span></button>`).join('');
+const show=i=>{const s=st[i];$$('.seg').forEach((e,j)=>e.style.opacity=j===i?1:.35);$$('.sb').forEach((e,j)=>{e.style.background=j===i?'#fff':'';e.style.boxShadow=j===i?'0 0 0 2px '+s[2]:''});
+$('#stepdetail').innerHTML=`<div class="panel on"><p class="text-sm font-semibold" style="color:${s[2]}">${i+1}. ${s[0]} (${s[1]} min)</p><p class="mt-3 text-lg">${s[3]}</p><p class="mt-5 text-sm text-pizarra/70">Entre bloques: una pausa breve para estirarse, tomar agua y respirar. El ritmo lo marca el grupo.</p></div>`};
+$$('.sb').forEach(b=>b.onclick=()=>show(+b.dataset.i));show(0);
+// KPIs
+const kr=$('#kr'),kv=$('#kv');const upd=()=>kv.textContent=kr.value+'%';kr.oninput=upd;upd();
+const faces=[['😞','Poco'],['😐','Regular'],['🙂','Bien'],['😊','Muy bien'],['🥰','Encantado']];
+$('#faces').innerHTML=faces.map((f,i)=>`<button class="fc rounded-xl px-2 py-1 transition duration-500" data-i="${i}" title="${f[1]}" aria-label="${f[1]}">${f[0]}</button>`).join('');
+$$('.fc').forEach(b=>b.onclick=()=>{$$('.fc').forEach(x=>{x.style.background='';x.style.transform=''});b.style.background='rgba(217,130,43,.4)';b.style.transform='scale(1.2)'});
+$$('.fc')[3].click();
+$('#bars').innerHTML=[['Ánimo',78],['Conversación',72],['Autonomía',65]].map(b=>`<div><div class="flex justify-between"><span>${b[0]}</span><span>${b[1]}% de familias reportan mejora</span></div><div class="h-2.5 rounded-full bg-lino/20 mt-1"><div class="h-full rounded-full bg-miel" style="width:${b[1]}%"></div></div></div>`).join('');
+</script>
+</body>
+</html>
